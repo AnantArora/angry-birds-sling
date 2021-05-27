@@ -20,7 +20,6 @@ function setup(){
     box2 = new Box(920,320,70,70);
     pig1 = new Pig(810, 350);
     log1 = new Log(810,260,300, PI/2);
-
    
     glass1 = new Glass(700, 240, 50, 50);
     glass2 = new Glass(920, 240, 50, 50);
@@ -35,7 +34,8 @@ function setup(){
     log5 = new Log(870,120,150, -PI/7);
 
     bird = new Bird(100,100);
-
+    log6= new Log (210,180,150,PI/2)
+    sling=new slingshot(bird.body,log6.body)
 }
 
 function draw(){
@@ -64,6 +64,7 @@ function draw(){
     box5.display();
     log4.display();
     log5.display();
-
+    log6.display()
     bird.display();
+    sling.display()
 }
